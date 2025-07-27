@@ -1,0 +1,27 @@
+{
+  "name": "ai-prompt-marketplace",
+  "version": "1.0.0",
+  "description": "A marketplace for AI prompts using NFTs",
+  "main": "index.js",
+  "scripts": {
+    "test": "hardhat test",
+    "compile": "hardhat compile",
+    "deploy": "hardhat run scripts/deploy.js",
+    "deploy:local": "hardhat run scripts/deploy.js --network localhost",
+    "node": "hardhat node"
+  },
+  "keywords": [
+    "blockchain",
+    "nft",
+    "ai",
+    "prompts"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "@openzeppelin/contracts": "^5.0.0",
+    "dotenv": "^16.0.3",
+    "hardhat": "^2.17.0"
+  }
+}
