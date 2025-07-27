@@ -1,27 +1,31 @@
 {
-  "name": "ai-prompt-marketplace",
+  "name": "ai-prompt-marketplace-backend",
   "version": "1.0.0",
-  "description": "A marketplace for AI prompts using NFTs",
-  "main": "index.js",
+  "description": "Backend API for AI Prompt Marketplace",
+  "main": "src/server.js",
   "scripts": {
-    "test": "hardhat test",
-    "compile": "hardhat compile",
-    "deploy": "hardhat run scripts/deploy.js",
-    "deploy:local": "hardhat run scripts/deploy.js --network localhost",
-    "node": "hardhat node"
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "jest"
   },
-  "keywords": [
-    "blockchain",
-    "nft",
-    "ai",
-    "prompts"
-  ],
-  "author": "",
-  "license": "MIT",
-  "devDependencies": {
-    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
-    "@openzeppelin/contracts": "^5.0.0",
+  "dependencies": {
+    "@originprotocol/origin-sdk": "^0.1.0",
+    "cors": "^2.8.5",
     "dotenv": "^16.0.3",
-    "hardhat": "^2.17.0"
+    "express": "^4.18.2",
+    "express-rate-limit": "^6.7.0",
+    "express-validator": "^7.0.1",
+    "helmet": "^7.0.0",
+    "mongoose": "^7.3.1",
+    "morgan": "^1.10.0",
+    "openai": "^4.0.0",
+    "stability-client": "^1.9.0",
+    "web3": "^1.10.0",
+    "winston": "^3.9.0"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "nodemon": "^2.0.22",
+    "supertest": "^6.3.3"
   }
 }
